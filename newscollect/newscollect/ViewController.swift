@@ -60,6 +60,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         print("Title: \(article.title)")
         
         articleCell.articleTitleLabel.text = article.title
+        articleCell.articleTextLabel.text = article.description
+        
         
         if let imageUrl = URL(string: article.urlToImage){
             DispatchQueue.global().async {

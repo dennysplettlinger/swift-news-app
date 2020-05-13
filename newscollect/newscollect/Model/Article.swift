@@ -9,13 +9,14 @@
 import Foundation
 
 struct ArticleResponse : Decodable {
-      let status: String
-      let articles: [Article]
+    let status: String
+    let articles: [Article]
   }
 
   struct Article : Decodable {
-      let title: String
-      let urlToImage: String
+    let title: String
+    let description: String
+    let urlToImage: String
   }
 
 
